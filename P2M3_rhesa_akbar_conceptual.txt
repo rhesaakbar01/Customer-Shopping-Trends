@@ -1,0 +1,24 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui!
+Jawaban:
+NoSQL atau NoSequel Database Management merupakan sebuah tipe managemen database yang difokuskan untuk tipe data yang tidak terstruktur dengan menggunakan format input bertipe JSON. Berkebalikan dengan SQL atau sequel-based database management, NoSQL untuk kasus data tabular tidak mengandalkan urutan imputasi record berdasarkan kolom, melainkan mengandalkan sepenuhnya kepada key-value pair sehingga terbebas dari kendala imputasi data yang mengharuskan secara berurutan dalam segi kolomnya.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System!
+Jawaban:
+Data Engineer dapat menggunakan NoSQL ketika berurusan dengan data besar yang susunannya tidak teratur/terstruktur, dilihat dari urutan imputasi data untuk masing-masing kolomnya. Sementara itu, RDBMS regular dapat digunakan pada ekosistem data yang sedari awal sudah dalam bentuk terstruktur, rigid, dan siap untuk diimputasi secara langsung.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut!
+Jawaban:
+- MongoDB: Memiliki keunggulan berupa scalable atau dapat digunakan oleh skala yang besar, baik dari sisi data yang dimuat maupun skala organisasi yang dibentuk dalam mengakomodasi kebutuhan penyimpanan dan pengolahan data.
+- Apache CouchDB: Merupakan database NoSQL yang berorientasi dokumen pada proses entry-nya serta memiliki keunggulan dalam prosee replikasi dan sinkronisasi untuk keperluan pemakaian secara ebrsama-sama meski aplikasi berada pada sistem offline
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri!
+Jawaban:
+Airflow merupakan sebuah platform open-source yang diperuntukkan sebagai pembuat data pipeline secara otomatis dengan menggunakan skema directed acyclic graph yang bermakna pemrosesan yang dilakukan merupakan pemrosesan linear yang tidak bersiklus/loop berulang.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!
+Jawaban:
+Great Expectation merupakan sebuah metode validasi untuk script code Python untuk menguji keabsahan dari sebuah dataset melalui kondisi-kondisi yang telah diatur di dalamnya. Paket ini bekerja layaknya unit testing untuk sebuah dataset. Great Expectation akan bekerja dengan melihat apakah nilai/value dari sebuah kolom/key memenuhi syarat yang telah ditentukan sehingga proses imputasi otomatis dapat dikatakan sukses dan berjalan tanpa adanya gangguan/bug selama proses berlangsung.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+Jawaban:
+Batch processing merupakan proses pemrosesan yang dilakukan secara terjadwal, tidak seperti jenis pemrosesan dengan mekanisme streaming yang berlangsung secara real-time. Batch processing data dilakukan secara terjadwal dengan interval waktu tertentu guna memperbarui database tanpa mengorbankan kinerja pengolahan data untuk bekerja dalam dirasi yang lama. Tipe pemrosesan ini dilakukan untuk kasus pengelolaan data penjualan yang butuh disinkronkan setelah periode tutup buku/akhir hari yang terjadwal. Ada pula proses pengelolaan data ini dapat dilakukan dengan menggunakan Airflow dengan bantuan Elasticsearch dan Kibana maupun MongoDB.
